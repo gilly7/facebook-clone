@@ -2,9 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { HiOutlineHome, HiOutlineSearch } from "react-icons/hi";
 import { RiFlag2Line} from "react-icons/ri"
-import {MdOutlineOndemandVideo} from "react-icons/md"
-import {AiOutlineShop} from "react-icons/ai"
+import {MdOutlineOndemandVideo, MdOutlineExpandMore} from "react-icons/md"
+import {AiFillBell, AiFillMessage, AiOutlineShop} from "react-icons/ai"
 import {IoGameControllerOutline} from "react-icons/io5"
+import { CgMenuGridO} from "react-icons/cg"
 
 const Header = () => {
   return (
@@ -56,9 +57,22 @@ const Header = () => {
           height={40}
           alt="fb logo"
         />
-        <p className="hidden xl:inline-flex font-semibold texr-sm whitespace-nowrap p-3 max-w-xs">
+        {/* <p className="hidden xl:inline-flex font-semibold texr-sm whitespace-nowrap p-3 max-w-xs"> */}
+        <p>
             Ngeno
         </p>
+        <CgMenuGridO size={20}
+        className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+      />
+     <AiFillMessage size={20}
+        className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+      />
+      <AiFillBell size={20}
+        className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+      />
+      <MdOutlineExpandMore size={20}
+        className="hidden lg:inline-flex h-10 w-10 bg-gray-200 text-gray-600 rounded-full p-2 cursor-pointer hover:bg-gray-300"
+      />
       </div>
     </div>
   );
